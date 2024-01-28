@@ -1,0 +1,291 @@
+html,body{
+    height: 100%;
+}
+/* BODY */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.image-full{
+    display: block;
+    width: 100%;
+    margin : 0 0 4em 0;
+}
+
+.container{
+    width: 1200px;
+    margin: 0px auto;   
+}
+
+/* Header */
+#header-wrapper{
+    background: #000000 url(../media/ps-background.jpg);
+    background-size: cover;
+}
+#header{
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+/*Logo*/
+#logo{
+    position: absolute;
+    top: 3em;
+    left: 0;
+}
+#logo h1, #logo p{
+    margin: 0;
+    padding: 0;
+}
+#logo h1{
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 3.5em;
+    
+}
+
+#ps a{
+    position: relative;
+    display: block;
+    line-height: 125px;
+    font-size: 3.5em;
+    text-align: right;
+    color: rgb(255, 255, 255);
+
+}
+
+/* Icon */
+
+#icon{
+    position: relative;
+    width: 500px;
+    height: 50px;
+    background: #e2e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#icon ul{
+    display: flex;
+    width: 350px;
+}
+
+#icon ul li .text{
+    color: #ffffff;
+}
+
+#icon ul li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 65px;
+    z-index: 5;
+}
+
+#icon ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+}
+
+#icon ul li a .icons{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 2.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: rgb(26, 26, 252);
+}
+
+#icon ul li:hover a .icons {
+    transform: translateY(-8px);
+}
+
+#icon ul li a .text{
+    position:absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 1.05em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#icon ul li:hover a .text{
+    opacity: 1;
+    transform: translateY(12px);
+
+}
+
+/* Page */
+#page{
+    overflow: hidden;
+    padding: 3em 0em 5em 0em;
+}
+#page img{
+    margin-bottom: 1em;
+}
+#page .title{
+    margin-bottom: 2em;
+}
+#page .title h2{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+#page .title .byline{
+    display: block;
+    padding-bottom: 2em;
+    color: rgb(255, 255, 255);
+}
+#page .column1{
+    width: 582px;
+}
+#page .button{
+    margin-top: 1em;
+}
+
+/* Footer */
+#footer{
+    overflow: hidden;
+    background: #202020;
+    padding: 2em 0px 1em 0px;
+}
+#footer p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* Column */
+.column1, 
+.column2, 
+.column3, 
+.column4{
+    width: 282px;
+}
+.column1, 
+.column2, 
+.column3{
+    float: left;
+    margin-right: 24px;
+}
+.column4{
+    float: right;
+}
+
+
+/* Button */
+.button{
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0em 1em;
+    background-color: #5c5558;
+    line-height: 3em;
+    border-radius: 15px;
+    letter-spacing: 0.10em;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.title{
+    margin-bottom: 3em;
+
+}
+
+.title h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+    color: (255 255 255 0.9);
+
+}
+
+.title .byline{
+    padding-top: 0.5em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color:#5e3d4a;
+
+}
+
+/* Animation property */
+.button {
+    animation: wiggle 2s linear infinite;
+  }
+  
+  /* Keyframes */
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+  .container ul li icon{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+  }
+  
+  .container ul li icon{
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

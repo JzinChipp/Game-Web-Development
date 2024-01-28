@@ -1,0 +1,197 @@
+body{
+    background-image: url(../media/Contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    margin-top: 5vh;
+    
+    
+}
+
+header .icons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 75px;
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    right: 0.1em;
+    margin: 0;
+    padding: 0; 
+    
+}
+
+/* Icon */
+
+
+#icon ul{
+    display: flex;
+    width: 350px;
+    margin-left: 480px;
+    font-size: 15px;
+    margin-top: 5vh;
+   
+}
+
+#icon ul li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    z-index: 5;
+}
+
+#icon ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 200;
+}
+
+#icon ul li a .icons{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 2.5em;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+
+#icon ul li:hover a .icons {
+    transform: translateY(-8px);
+    color: rgb(255, 255, 255);
+}
+
+#icon ul li a .text{
+    position:absolute;
+    color:white;
+    font-weight: 400;
+    font-size: 1.05em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#icon ul li:hover a .text{
+    opacity: 1;
+    transform: translateY(12px);
+    color: rgb(255, 255, 255);
+
+}
+
+/* Footer */
+#footer{
+    overflow: hidden;
+    background: #202020;
+    padding: 0;
+    font-size: 20px;
+}
+#footer p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+form{
+    background:#ffffff00;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 4vw;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+   
+}
+
+form input, form textarea{
+    border:0;
+    margin: 5px 0;
+    padding: 10px;
+    outline: none;
+    background: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5em;
+    
+}
+
+form button{
+    padding: 10px;
+    background: #fa0015;
+    color: #ffffff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 5vh auto;
+    margin-bottom: -8vh;
+    border-radius: 1em;
+   
+
+}
+
+.info{
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 1vh 1vh #202020;
+}
+
+.info h3{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/*review*/
+.table {
+  font-family: "Fira Sans", sans-serif;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1vh solid #00000069;
+  background-color: #ffffff1e;
+
+  
+}
+
+.table th {
+  text-align: center;
+  border-top: 2vh solid #00000069;
+  border-bottom: 1vh solid #00000069;
+}
+
+.table td,
+.search-input {
+  font-size: 1em;
+  padding: 0.6em 1em;
+  text-align: center;
+
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+}
+

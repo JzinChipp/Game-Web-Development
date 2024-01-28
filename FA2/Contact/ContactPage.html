@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bc86246aba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ContactPage.css" type="text/css">
+    <title>ContactPage</title>
+</head>
+<body>
+    
+    
+    
+        <header>
+            <span class="icons"><ion-icon name="chatbubble-outline"></ion-icon></span>
+        </header>  
+
+    <div id="icon" class="container">
+        <ul>
+            <li><a href="../Landing/LandingPage.html" >
+                <span class="icons"><ion-icon name="logo-playstation"></ion-icon></span>
+                <span class = "text">Landing</span></a></li>
+            <li><a href="../Home/HomePage.html" >
+                <span class="icons"><ion-icon name="home-outline"></ion-icon></span>
+                <span class = "text">Home</span></a></li>
+            <li><a href="../About/AboutPage.html" >
+                <span class="icons"><ion-icon name="information-outline"></ion-icon></span>
+                <span class = "text">About</span></a></li>
+            <li><a href="../Contact/ContactPage.html" >
+                <span class="icons"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                <span class = "text">Contact</span></a></li>
+            <li><a href="../Gallary/GallaryPage.html" >
+                <span class="icons"><ion-icon name="image-outline"></ion-icon></span>
+                <span class = "text">Gallary</span></a></li>
+            <div class="icon"></div>
+        </ul>
+    </div>
+    <br>
+    <div class="container" onsubmit="sendEmail(); reset(); return false;">
+        <form>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="Surname" id="email" placeholder="Surname" required>
+            <input type="Email" id="phone"placeholder=" Email" required>
+            <textarea id="Question"id="4"placeholder="Question?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th>
+              <input type="text" class="search-input" placeholder="GameName">
+            </th>
+            <th>
+              <input type="text" class="search-input" placeholder="GameType">
+            </th>
+            <th>
+              <input type="text" class="search-input" placeholder="Rating">
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>Halo: Combat Evolved</td>
+            <td>First-person shooter game </td>
+            <td>1</td>
+            
+          </tr>
+          <tr>
+
+            <tr>
+                <td>Grand Theft Auto 5</td>
+                <td> Action-adventure game</td>
+                <td>2</td>
+                
+              </tr>
+              <tr>
+
+                <tr>
+                    <td>The Elder Scrolls V Skyrim</td>
+                    <td>Action role-playing video game</td>
+                    <td>3</td>
+                    
+                  </tr>
+                  <tr>
+
+                    <tr>
+                        <td>Metal Gear Solid</td>
+                        <td>Techno-thriller stealth games</td>
+                        <td>4</td>
+                        
+                      </tr>
+                      <tr>
+
+                        <tr>
+                            <td>Life is Strange</td>
+                            <td>Graphic adventure</td>
+                            <td>5</td>
+                            
+                          </tr>
+                          <tr>
+
+                            <tr>
+                                <td>Fortnite</td>
+                                <td>Battle royale game</td>
+                                <td>6</td>
+                                
+                              </tr>
+                              <tr>
+
+                                <tr>
+                                    <td>The Legend of Zelda: Breath of the Wild</td>
+                                    <td>Open world action-adventure game.</td>
+                                    <td>7</td>
+                                    
+                                  </tr>
+                                  <tr>
+
+                                    <tr>
+                                        <td>Resident Evil 4</td>
+                                        <td>Survival horror third-person shooter game </td>
+                                        <td>8</td>
+                                        
+                                      </tr>
+                                      <tr>
+
+                                        <tr>
+                                            <td>The Last of Us </td>
+                                            <td>Action-adventure game</td>
+                                            <td>9</td>
+                                            
+                                          </tr>
+                                          <tr>
+
+                                            <tr>
+                                                <td>Bloodborne</td>
+                                                <td>Action role-playing game</td>
+                                                <td>10</td>
+                                                
+                                              </tr>
+                                              <tr>
+
+
+            
+    </tbody>
+    </table>
+      <br>
+
+    <div class="info">
+        <h3><span class="auto-type"></span></h3>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["BT games, games for you"],
+            typeSpeed : 80,
+            backSpeed : 80,
+            loop : true
+        })
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    </section>
+    <script src="ContactPage.js"></script>
+
+    
+   
+
+    <br>
+    <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229134.5910045191!2d28.109624836588893!3d-26.189260964148882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9516ed70fc54c9%3A0x9819981c1409d1c4!2sBT%20Games%20East%20Point%20Mall!5e0!3m2!1sen!2sza!4v1662968708262!5m2!1sen!2sza"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </div>
+
+    <script src="map.js"></script>
+
+    <br>
+    <div id="footer">
+        <p>
+            &copy; All Rights reserved. Designed by Jason van Baalen
+            
+        </p>
+    </div> 
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
